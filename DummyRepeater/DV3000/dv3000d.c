@@ -319,6 +319,8 @@ int main(int argc, char **argv)
 				return 1;
 		}
 	}
+	
+	fprintf(stderr, "dv3000d has been deprecated, please use AMBEserverGPIO for DV3000 or AMBEserver for DV3000U\n");
 
 	if (daemon) {
 		pid_t pid = fork();
